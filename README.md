@@ -44,3 +44,49 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+3. Configure Database
+bash
+# Apply migrations
+python manage.py migrate
+
+# Create admin user
+python manage.py createsuperuser
+4. Run Development Server
+bash
+python manage.py runserver
+Access at: http://localhost:8000
+
+Project Structure 📂
+text
+connect-app/
+├── core/               # Main application
+├── social_network/     # Project config
+├── templates/          # HTML templates
+├── static/             # CSS/JS assets
+├── .gitignore
+├── manage.py
+├── README.md
+└── requirements.txt
+Usage Guide 🚀
+Register a new account
+
+Customize your profile
+
+Create posts and interact with others
+
+Send friend requests
+
+See real-time updates
+
+Contributing 🤝
+Contributions welcome! Please follow these steps:
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/awesome-feature)
+
+Commit your changes (git commit -m 'Add awesome feature')
+
+Push to the branch (git push origin feature/awesome-feature)
+
+Open a pull request
